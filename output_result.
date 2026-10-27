@@ -1,0 +1,135 @@
+Data Count : 10000
+Seed : 2026
+
+Random trials: 10 / 100 completed
+Random trials: 20 / 100 completed
+Random trials: 30 / 100 completed
+Random trials: 40 / 100 completed
+Random trials: 50 / 100 completed
+Random trials: 60 / 100 completed
+Random trials: 70 / 100 completed
+Random trials: 80 / 100 completed
+Random trials: 90 / 100 completed
+Random trials: 100 / 100 completed
+Random Data
+Number of Trials : 100
+
+Selection Sort
+Total Comparisons   : 4999500000
+Average Comparisons : 49995000.00
+Total Movements     : 2997069
+Average Movements   : 29970.69
+
+Bubble Sort
+Total Comparisons   : 4999500000
+Average Comparisons : 49995000.00
+Total Movements     : 7499593656
+Average Movements   : 74995936.56
+
+Bubble Sort (Early Termination)
+Total Comparisons   : 4998443149
+Average Comparisons : 49984431.49
+Total Movements     : 7499593656
+Average Movements   : 74995936.56
+
+Insertion Sort (>)
+Total Comparisons   : 2500863550
+Average Comparisons : 25008635.50
+Total Movements     : 2501864352
+Average Movements   : 25018643.52
+
+All 100 trials sorted and data preserved: YES
+
+------------------------------------
+
+Sorted Data
+
+Selection Sort
+Comparisons : 49995000
+Movements   : 0
+Sorted + data check: OK
+
+Bubble Sort
+Comparisons : 49995000
+Movements   : 0
+Sorted + data check: OK
+
+Bubble Sort (Early Termination)
+Comparisons : 9999
+Movements   : 0
+Sorted + data check: OK
+
+Insertion Sort (>)
+Comparisons : 9999
+Movements   : 19998
+Sorted + data check: OK
+
+------------------------------------
+
+Reverse-Sorted Data
+
+Selection Sort
+Comparisons : 49995000
+Movements   : 15102
+Sorted + data check: OK
+
+Bubble Sort
+Comparisons : 49995000
+Movements   : 149984844
+Sorted + data check: OK
+
+Bubble Sort (Early Termination)
+Comparisons : 49995000
+Movements   : 149984844
+Sorted + data check: OK
+
+Insertion Sort (>)
+Comparisons : 49995000
+Movements   : 50014946
+Sorted + data check: OK
+
+------------------------------------
+
+(Partially sorted: sorted array + 500 random swaps = 5% of N)
+
+Partially Sorted Data
+
+Selection Sort
+Comparisons : 49995000
+Movements   : 1509
+Sorted + data check: OK
+
+Bubble Sort
+Comparisons : 49995000
+Movements   : 8904009
+Sorted + data check: OK
+
+Bubble Sort (Early Termination)
+Comparisons : 49957050
+Movements   : 8904009
+Sorted + data check: OK
+
+Insertion Sort (>)
+Comparisons : 2978002
+Movements   : 2988001
+Sorted + data check: OK
+
+------------------------------------
+
+Stability Verification
+
+Small example (Key1, Key2): (5,100) (5,200) (2,300)
+  Selection      -> (2,300) (5,200) (5,100)
+  Insertion (>)  -> (2,300) (5,100) (5,200)
+  Insertion (>=) -> (2,300) (5,200) (5,100)
+
+Test data: 10000 items, Key1 in [0,50] (about 196 items per key value)
+
+Selection Sort       : NOT STABLE (sorted=OK, violations=3232)
+Bubble Sort          : STABLE (sorted=OK, violations=0)
+Bubble Sort (Early)  : STABLE (sorted=OK, violations=0)
+Insertion Sort (>)   : STABLE (sorted=OK, violations=0)
+Insertion Sort (>=)  : NOT STABLE (sorted=OK, violations=9949)
+
+Insertion (>)  on dup data: Comparisons=24432391, Movements=24442397
+Insertion (>=) on dup data: Comparisons=25412536, Movements=25422725
